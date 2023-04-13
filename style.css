@@ -45,6 +45,9 @@ header {
 .mobile-number {
   font-weight: 600;
 }
+.mobile-pointer {
+  cursor: pointer;
+}
 .logo img {
   width: 15rem;
 }
@@ -201,7 +204,7 @@ address {
 .contact-form input[type="submit"]:hover {
   background-color: #14ce1a;
 }
-.article {
+article {
   margin-top: 3rem;
   line-height: 2rem;
   font-size: 1.2rem;
@@ -419,16 +422,38 @@ input:focus {
   main {
     margin: 10px;
   }
+  article {
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 300px) {
   main {
     margin: 20px;
   }
   .upper-footer {
+    text-align: center;
     flex-direction: column;
   }
   .sub-footer {
     width: 100%;
+  }
+  .sub-footer p {
+    min-width: 120px;
+  }
+  .sub-footer div {
+    position: relative;
+    height: 3rem;
+  }
+  #email {
+    position: absolute;
+    left: 39%;
+    top: 21.5%;
+    transform: translate(-50%, -50%);
+  }
+  #signup {
+    position: absolute;
+    left: 65%;
+    top: -12%;
   }
 }
 @media screen and (max-width: 240px) {
