@@ -8,6 +8,11 @@
 html {
   -webkit-tap-highlight-color: transparent;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 header {
   margin-top: 20px;
   box-shadow: -1px 6px 9px -4px #b7b7b7;
@@ -129,7 +134,7 @@ address {
 .contact-address h2 {
   color: #515151;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 .contact-address-detail {
   gap: 0.5rem;
@@ -202,12 +207,15 @@ address {
   cursor: pointer;
 }
 .contact-form input[type="submit"]:hover {
-  background-color: #14ce1a;
+  background-color: #3838bd;
 }
 article {
   margin-top: 3rem;
   line-height: 2rem;
   font-size: 1.2rem;
+}
+footer{
+  margin-top: auto;
 }
 .footer {
   overflow: hidden;
@@ -284,7 +292,8 @@ iframe {
   color: #999999;
 }
 .sub-footer input[type="button"]:hover {
-  background-color: #44c374;
+  background-color: #3838bd;
+  color: #efefef;
 }
 input:focus {
   outline: none;
